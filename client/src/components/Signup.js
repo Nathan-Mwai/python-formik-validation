@@ -43,7 +43,8 @@ export const SignupForm = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(values, null, 2),
-      }).then((res) => {
+      })
+      .then((res) => {
         if (res.status == 200) {
           setRefreshPage(!refreshPage);
         }
